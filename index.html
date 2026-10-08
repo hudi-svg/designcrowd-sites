@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>International Tactical Security Services</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            tactical: {
+              50: '#f7f7f6',
+              100: '#ececeb',
+              800: '#242628',
+              900: '#17191b',
+            },
+            securityRed: {
+              600: '#b0181d',
+              700: '#921217',
+              800: '#760f13',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            display: ['Montserrat', 'ui-sans-serif', 'system-ui', 'sans-serif']
+          },
+          boxShadow: {
+            soft: '0 18px 50px rgba(0,0,0,.10)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: Inter, sans-serif; }
+    .font-display { font-family: Montserrat, sans-serif; }
+    .hero-grid {
+      background-image:
+        linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+      background-size: 48px 48px;
+    }
+    .red-line {
+      width: 56px;
+      height: 4px;
+      background: #b0181d;
+    }
+  </style>
+</head>
+
+<body class="bg-white text-tactical-900 antialiased">
+
+  <!-- TOP BAR -->
+  <div class="bg-tactical-900 text-white/80 text-xs">
+    <div class="mx-auto max-w-7xl px-6 py-2 flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
+      <p>Professional Security Services • Portland, Oregon</p>
+      <div class="flex gap-5">
+        <span>24/7 Protection</span>
+        <span class="hidden sm:inline">Licensed Professionals</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-black/10">
+    <div class="mx-auto max-w-7xl px-6 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+       <img src="logo.png" alt=""
+       class="w-20 h-auto">
+        <div class="leading-tight">
+          <div class="font-display font-extrabold text-sm tracking-tight">INTERNATIONAL</div>
+          <div class="font-display font-extrabold text-sm tracking-tight">TACTICAL SECURITY</div>
+          <div class="text-[10px] uppercase tracking-[.22em] text-black/50">Security Services</div>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold">
+        <a href="#services" class="hover:text-securityRed-700 transition">Services</a>
+        <a href="#about" class="hover:text-securityRed-700 transition">About Us</a>
+        <a href="#why-us" class="hover:text-securityRed-700 transition">Why Us</a>
+        <a href="#training" class="hover:text-securityRed-700 transition">Training</a>
+        <a href="#contact" class="hover:text-securityRed-700 transition">Contact</a>
+      </nav>
+
+      <a href="#contact" class="hidden sm:inline-flex bg-securityRed-700 hover:bg-securityRed-800 text-white px-5 py-3 text-xs font-bold uppercase tracking-wider transition">
+        Get a Free Quote
+      </a>
+
+      <button class="lg:hidden border border-black/10 p-2" aria-label="Open menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden bg-tactical-900 text-white">
+    <div class="absolute inset-0 hero-grid opacity-70"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-black/70via-black/70 to-black/20"></div>
+
+    <div class="relative mx-auto max-w-7xl px-6 min-h-[650px] flex items-center">
+      <div class="absolute right-0 top-0 bottom-0 w-full lg:w-[58%]">
+        <img
+          src="hero (2).jpg"
+          alt="Professional security team"
+          class="h-full w-full object-cover opacity-55"
+        />
+        <div class="absolute inset-0 bg-gradient-to-r from-tactical-900 via-tactical-900/55 to-transparent"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-tactical-900/70 via-transparent to-tactical-900/30"></div>
+      </div>
+
+      <div class="relative z-10 max-w-2xl py-24">
+        <div class="flex items-center gap-3 mb-7">
+          <div class="red-line"></div>
+          <span class="uppercase tracking-[.25em] text-xs font-bold text-white/70">Security You Can Trust</span>
+        </div>
+
+        <h1 class="font-display text-5xl sm:text-6xl lg:text-7xl font-black uppercase leading-[.95] tracking-tight">
+          Your Security.<br>
+          <span class="text-securityRed-600">Our Mission.</span>
+        </h1>
+
+        <p class="mt-7 max-w-xl text-lg leading-8 text-white/75">
+          Professional security officers for businesses, events and organizations.
+          Experienced people. Serious protection. Service built around your needs.
+        </p>
+
+        <div class="mt-9 flex flex-col sm:flex-row gap-3">
+          <a href="#contact" class="inline-flex justify-center items-center bg-securityRed-700 hover:bg-securityRed-800 px-7 py-4 text-sm font-bold uppercase tracking-wider transition">
+            Get a Free Quote
+          </a>
+          <a href="#services" class="inline-flex justify-center items-center border border-white/30 hover:bg-white hover:text-black px-7 py-4 text-sm font-bold uppercase tracking-wider transition">
+            Explore Services
+          </a>
+        </div>
+
+        <div class="mt-12 grid grid-cols-3 max-w-lg border-t border-white/15 pt-6">
+          <div>
+            <div class="font-display text-2xl font-extrabold">32+</div>
+            <div class="text-[10px] uppercase tracking-widest text-white/50 mt-1">Years Experience</div>
+          </div>
+          <div class="border-l border-white/15 pl-5">
+            <div class="font-display text-2xl font-extrabold">24/7</div>
+            <div class="text-[10px] uppercase tracking-widest text-white/50 mt-1">Protection</div>
+          </div>
+          <div class="border-l border-white/15 pl-5">
+            <div class="font-display text-2xl font-extrabold">OR / WA</div>
+            <div class="text-[10px] uppercase tracking-widest text-white/50 mt-1">Service Area</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <section class="bg-securityRed-700 text-white">
+    <div class="mx-auto max-w-7xl px-6 py-7 grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="flex items-center gap-3">
+        <span class="text-2xl font-black">01</span>
+        <span class="text-xs uppercase tracking-wider font-semibold">Professional Officers</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="text-2xl font-black">02</span>
+        <span class="text-xs uppercase tracking-wider font-semibold">Customized Security Plans</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="text-2xl font-black">03</span>
+        <span class="text-xs uppercase tracking-wider font-semibold">Business & Event Security</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="text-2xl font-black">04</span>
+        <span class="text-xs uppercase tracking-wider font-semibold">Training & Careers</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="py-24 bg-tactical-50">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="max-w-2xl">
+        <div class="red-line mb-5"></div>
+        <p class="text-xs font-bold uppercase tracking-[.25em] text-securityRed-700">What We Do</p>
+        <h2 class="font-display text-4xl sm:text-5xl font-black uppercase mt-3 tracking-tight">
+          Security Built Around Your Needs
+        </h2>
+        <p class="mt-5 text-black/60 leading-7">
+          From retail and banking to special events and mobile patrol,
+          our security professionals help protect the people, property and
+          businesses that matter most.
+        </p>
+      </div>
+
+      <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <article class="group relative min-h-[330px] overflow-hidden bg-tactical-900 text-white">
+          <img src="retail scurity.jpg"
+               alt="Retail security" class="absolute inset-0 w-full h-full object-cover opacity-45 group-hover:scale-105 transition duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+          <div class="relative h-full min-h-[330px] p-7 flex flex-col justify-end">
+            <span class="text-securityRed-600 font-black text-xs">01</span>
+            <h3 class="font-display text-2xl font-extrabold uppercase mt-2">Retail Security</h3>
+            <p class="text-white/65 text-sm mt-2">Visible, professional protection for retail environments.</p>
+          </div>
+        </article>
+
+        <article class="group relative min-h-[330px] overflow-hidden bg-tactical-900 text-white">
+          <img src="event scurity.jpg"
+               alt="Event security" class="absolute inset-0 w-full h-full object-cover opacity-45 group-hover:scale-105 transition duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+          <div class="relative h-full min-h-[330px] p-7 flex flex-col justify-end">
+            <span class="text-securityRed-600 font-black text-xs">02</span>
+            <h3 class="font-display text-2xl font-extrabold uppercase mt-2">Event Security</h3>
+            <p class="text-white/65 text-sm mt-2">Keep guests, staff and venues secure from arrival to close.</p>
+          </div>
+        </article>
+
+        <article class="group relative min-h-[330px] overflow-hidden bg-tactical-900 text-white">
+          <img src="bank scurity.jpg"
+               alt="Business security" class="absolute inset-0 w-full h-full object-cover opacity-45 group-hover:scale-105 transition duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+          <div class="relative h-full min-h-[330px] p-7 flex flex-col justify-end">
+            <span class="text-securityRed-600 font-black text-xs">03</span>
+            <h3 class="font-display text-2xl font-extrabold uppercase mt-2">Bank & Business</h3>
+            <p class="text-white/65 text-sm mt-2">Professional security for high-value business environments.</p>
+          </div>
+        </article>
+
+        <article class="group relative min-h-[330px] overflow-hidden bg-tactical-900 text-white">
+          <img src="patroli.jpg"
+               alt="Mobile patrol" class="absolute inset-0 w-full h-full object-cover opacity-45 group-hover:scale-105 transition duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+          <div class="relative h-full min-h-[330px] p-7 flex flex-col justify-end">
+            <span class="text-securityRed-600 font-black text-xs">04</span>
+            <h3 class="font-display text-2xl font-extrabold uppercase mt-2">Mobile Patrol</h3>
+            <p class="text-white/65 text-sm mt-2">A visible security presence for properties and facilities.</p>
+          </div>
+        </article>
+
+        <article class="group relative min-h-[330px] overflow-hidden bg-tactical-900 text-white">
+          <img src="fire watch.jpg"
+               alt="Fire watch" class="absolute inset-0 w-full h-full object-cover opacity-45 group-hover:scale-105 transition duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+          <div class="relative h-full min-h-[330px] p-7 flex flex-col justify-end">
+            <span class="text-securityRed-600 font-black text-xs">05</span>
+            <h3 class="font-display text-2xl font-extrabold uppercase mt-2">Fire Watch</h3>
+            <p class="text-white/65 text-sm mt-2">Dedicated monitoring when your property requires additional protection.</p>
+          </div>
+        </article>
+
+        <article class="group relative min-h-[330px] overflow-hidden bg-tactical-900 text-white">
+          <img src="executive.jpg"
+               alt="Executive protection" class="absolute inset-0 w-70 h-auto object-cover opacity-45 group-hover:scale-105 transition duration-700">
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
+          <div class="relative h-full min-h-[330px] p-7 flex flex-col justify-end">
+            <span class="text-securityRed-600 font-black text-xs">06</span>
+            <h3 class="font-display text-2xl font-extrabold uppercase mt-2">Executive Protection</h3>
+            <p class="text-white/65 text-sm mt-2">Discreet protection tailored to individual security needs.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US -->
+  <section id="why-us" class="py-24 bg-white">
+    <div class="mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-16 items-center">
+      <div class="relative">
+        <div class="absolute -left-5 -bottom-5 w-40 h-40 bg-securityRed-700"></div>
+        <img
+          src="team.jpg"
+          alt="Professional security team"
+          class="relative z-10 w-full aspect-[4/3] object-cover"
+        />
+        <div class="absolute z-20 bottom-6 left-6 bg-tactical-900 text-white p-6 max-w-xs">
+          <div class="font-display text-3xl font-black">32+</div>
+          <div class="text-xs uppercase tracking-widest text-white/60 mt-1">Years of Combined Security Experience</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="red-line mb-5"></div>
+        <p class="text-xs font-bold uppercase tracking-[.25em] text-securityRed-700">Why International Tactical</p>
+        <h2 class="font-display text-4xl sm:text-5xl font-black uppercase mt-3 tracking-tight">
+          People You Can Count On.
+        </h2>
+        <p class="mt-6 text-black/60 leading-7">
+          Security is more than a uniform at the door. It is preparation, awareness,
+          professionalism and the ability to respond when it matters.
+        </p>
+
+        <div class="mt-8 space-y-5">
+          <div class="flex gap-4">
+            <div class="shrink-0 w-10 h-10 bg-red-50 text-securityRed-700 flex items-center justify-center font-black">01</div>
+            <div>
+              <h3 class="font-bold">Experienced Professionals</h3>
+              <p class="text-sm text-black/55 mt-1">Experienced personnel with backgrounds suited to demanding security environments.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="shrink-0 w-10 h-10 bg-red-50 text-securityRed-700 flex items-center justify-center font-black">02</div>
+            <div>
+              <h3 class="font-bold">Customized Security Plans</h3>
+              <p class="text-sm text-black/55 mt-1">We adapt staffing and procedures to the risks and requirements of your location.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="shrink-0 w-10 h-10 bg-red-50 text-securityRed-700 flex items-center justify-center font-black">03</div>
+            <div>
+              <h3 class="font-bold">Professional Presence</h3>
+              <p class="text-sm text-black/55 mt-1">A visible, respectful and dependable presence for your customers, employees and guests.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="shrink-0 w-10 h-10 bg-red-50 text-securityRed-700 flex items-center justify-center font-black">04</div>
+            <div>
+              <h3 class="font-bold">Security Career Training</h3>
+              <p class="text-sm text-black/55 mt-1">Training opportunities for people who want to build a career in security.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DARK CTA -->
+  <section class="bg-tactical-900 text-white">
+    <div class="mx-auto max-w-7xl px-6 py-20 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+      <div>
+        <p class="text-securityRed-600 text-xs font-bold uppercase tracking-[.25em]">Don't Take Chances</p>
+        <h2 class="font-display text-4xl sm:text-5xl font-black uppercase mt-3">Protect What Matters Most.</h2>
+        <p class="text-white/60 mt-4 max-w-xl">Tell us what you need protected and we'll help build the right security solution.</p>
+      </div>
+      <a href="#contact" class="shrink-0 bg-securityRed-700 hover:bg-securityRed-800 px-8 py-4 font-bold uppercase tracking-wider text-sm transition">
+        Request a Quote
+      </a>
+    </div>
+  </section>
+
+  <!-- ABOUT / TRAINING -->
+  <section id="about" class="py-24 bg-tactical-50">
+    <div class="mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-6">
+      <div class="bg-white p-9 sm:p-12 shadow-soft">
+        <div class="red-line mb-5"></div>
+        <p class="text-xs font-bold uppercase tracking-[.25em] text-securityRed-700">About Us</p>
+        <h2 class="font-display text-3xl sm:text-4xl font-black uppercase mt-3">Security With Purpose.</h2>
+        <p class="mt-5 text-black/60 leading-7">
+          International Tactical Security Services provides security officers and
+          security solutions for businesses, organizations and events. Our goal is
+          straightforward: deliver dependable professionals who help clients feel
+          safer and more prepared.
+        </p>
+        <a href="#contact" class="inline-block mt-7 text-securityRed-700 font-bold text-sm uppercase tracking-wider">
+          Learn More →
+        </a>
+      </div>
+
+      <div id="training" class="bg-securityRed-700 text-white p-9 sm:p-12">
+        <div class="text-white/70 text-xs font-bold uppercase tracking-[.25em]">Build Your Career</div>
+        <h2 class="font-display text-3xl sm:text-4xl font-black uppercase mt-3">Security Training</h2>
+        <p class="mt-5 text-white/75 leading-7">
+          Interested in a career in security? Explore training and opportunities
+          designed to help you take the next step.
+        </p>
+        <a href="#contact" class="inline-block mt-7 bg-white text-tactical-900 px-6 py-3 font-bold text-sm uppercase tracking-wider hover:bg-white/90 transition">
+          Learn About Training
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="py-24 bg-white">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="text-center max-w-2xl mx-auto">
+        <div class="red-line mx-auto mb-5"></div>
+        <p class="text-xs font-bold uppercase tracking-[.25em] text-securityRed-700">Client Trust</p>
+        <h2 class="font-display text-4xl font-black uppercase mt-3">Trusted By Our Clients</h2>
+      </div>
+
+      <div class="mt-12 grid md:grid-cols-3 gap-5">
+        <blockquote class="border border-black/10 p-7">
+          <div class="text-securityRed-700 text-4xl font-black">“</div>
+          <p class="text-black/65 leading-7">Professional, responsive and dependable. Their team gave us confidence from day one.</p>
+          <footer class="mt-6 text-sm font-bold">— Business Client</footer>
+        </blockquote>
+        <blockquote class="border border-black/10 p-7">
+          <div class="text-securityRed-700 text-4xl font-black">“</div>
+          <p class="text-black/65 leading-7">The officers were professional with our guests while maintaining a strong security presence.</p>
+          <footer class="mt-6 text-sm font-bold">— Event Client</footer>
+        </blockquote>
+        <blockquote class="border border-black/10 p-7">
+          <div class="text-securityRed-700 text-4xl font-black">“</div>
+          <p class="text-black/65 leading-7">They took the time to understand our needs and build a security plan that worked for us.</p>
+          <footer class="mt-6 text-sm font-bold">— Commercial Client</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="bg-tactical-900 text-white py-24">
+    <div class="mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-14">
+      <div>
+        <div class="red-line mb-5"></div>
+        <p class="text-xs font-bold uppercase tracking-[.25em] text-securityRed-600">Start A Conversation</p>
+        <h2 class="font-display text-4xl sm:text-5xl font-black uppercase mt-3">Let's Talk Security.</h2>
+        <p class="mt-6 text-white/60 leading-7 max-w-lg">
+          Tell us about your property, business or event. We'll help you determine
+          the right security solution.
+        </p>
+
+        <div class="mt-10 space-y-5 text-sm">
+          <div>
+            <div class="text-white/40 uppercase tracking-widest text-[10px]">Service Area</div>
+            <div class="font-semibold mt-1">Portland, Oregon & surrounding areas</div>
+          </div>
+          <div>
+            <div class="text-white/40 uppercase tracking-widest text-[10px]">Availability</div>
+            <div class="font-semibold mt-1">Professional security services available 24/7</div>
+          </div>
+        </div>
+      </div>
+
+      <form class="bg-white text-tactical-900 p-7 sm:p-9">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <label class="block">
+            <span class="text-xs font-bold uppercase tracking-wider">First Name</span>
+            <input type="text" class="mt-2 w-full border border-black/15 px-4 py-3 outline-none focus:border-securityRed-700" />
+          </label>
+          <label class="block">
+            <span class="text-xs font-bold uppercase tracking-wider">Last Name</span>
+            <input type="text" class="mt-2 w-full border border-black/15 px-4 py-3 outline-none focus:border-securityRed-700" />
+          </label>
+        </div>
+
+        <label class="block mt-4">
+          <span class="text-xs font-bold uppercase tracking-wider">Email</span>
+          <input type="email" class="mt-2 w-full border border-black/15 px-4 py-3 outline-none focus:border-securityRed-700" />
+        </label>
+
+        <label class="block mt-4">
+          <span class="text-xs font-bold uppercase tracking-wider">Security Service Needed</span>
+          <select class="mt-2 w-full border border-black/15 px-4 py-3 outline-none focus:border-securityRed-700 bg-white">
+            <option>Retail Security</option>
+            <option>Event Security</option>
+            <option>Bank / Business Security</option>
+            <option>Mobile Patrol</option>
+            <option>Fire Watch</option>
+            <option>Executive Protection</option>
+            <option>Training</option>
+          </select>
+        </label>
+
+        <label class="block mt-4">
+          <span class="text-xs font-bold uppercase tracking-wider">Message</span>
+          <textarea rows="4" class="mt-2 w-full border border-black/15 px-4 py-3 outline-none focus:border-securityRed-700"></textarea>
+        </label>
+
+        <button type="button" class="mt-5 w-full bg-securityRed-700 hover:bg-securityRed-800 text-white py-4 font-bold uppercase tracking-wider text-sm transition">
+          Request My Quote
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-white/55">
+    <div class="mx-auto max-w-7xl px-6 py-12 grid md:grid-cols-3 gap-10">
+      <div>
+        <div class="flex items-center gap-3 text-white">
+         <img src="logo.png" alt=""
+       class="w-24 h-auto">
+          <div class="font-display font-extrabold text-sm">INTERNATIONAL<br>TACTICAL SECURITY</div>
+        </div>
+        <p class="mt-5 text-sm leading-6 max-w-sm">
+          Professional security services for businesses, organizations and events.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-white font-bold text-sm uppercase tracking-wider">Quick Links</h3>
+        <div class="mt-5 grid grid-cols-2 gap-3 text-sm">
+          <a href="#services" class="hover:text-white">Services</a>
+          <a href="#about" class="hover:text-white">About</a>
+          <a href="#why-us" class="hover:text-white">Why Us</a>
+          <a href="#training" class="hover:text-white">Training</a>
+          <a href="#contact" class="hover:text-white">Contact</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-white font-bold text-sm uppercase tracking-wider">Get In Touch</h3>
+        <p class="mt-5 text-sm leading-7">
+          Portland, Oregon<br>
+          Professional Security Services<br>
+          Available 24/7
+        </p>
+      </div>
+    </div>
+
+    <div class="border-t border-white/10">
+      <div class="mx-auto max-w-7xl px-6 py-5 text-xs flex flex-col sm:flex-row justify-between gap-2">
+        <span>© 2026 International Tactical Security Services. All rights reserved.</span>
+        <span>Professional. Prepared. Dependable.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
